@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafío del Dom</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- Dado el código HTML a continuación termina de rellenarlo para tras rellenar los campos de nombre y apellido y hacer clic en enviar, estos datos aparezcan en la pantalla «hola nombre apellidos, gracias por rellenar el formulario de LarnU». -->
+
+    <form action="#saludo" class="form">
+      <label for="nombre" class="form__label form__label--nombre"
+        >Nombre:</label
+      >
+      <input
+        type="text"
+        id="nombre"
+        class="form__input form__input--nombre"
+        placeholder="Nombre:"
+        required
+        autofocus
+      />
+      <label for="apellido" class="form__label form__label--apellido"
+        >Apellido:</label
+      >
+      <input
+        type="text"
+        id="apellido"
+        class="form__input form__input--apellido"
+        placeholder="Apellido:"
+        required
+        autofocus
+      />
+      <input
+        type="submit"
+        value="Rellenar datos"
+        class="form__input form__input--btn"
+        id="btn"
+      />
+    </form>
+
+    <p id="saludo" class="saludo"></p>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
